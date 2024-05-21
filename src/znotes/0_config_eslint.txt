@@ -1,0 +1,59 @@
+configurar el linter
+
+ejecutar, hize esto:
+$npm install eslint --save--dev
+$npm slint --init
+$./node_modules/.bin/eslint --init
+o
+$npm init @eslint/config
+
+$ npx eslint --init
+$npm init @eslint/config
+questions:
+ How would you like to use ESLint? · problems
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · react
+√ The React plugin doesn't officially support ESLint v9 yet. What would you like to do? · 9.x
+√ Does your project use TypeScript? · typescript
+√ Where does your code run? · browser
+The config that you've selected requires the following dependencies:
+
+eslint@9.x, globals, @eslint/js, typescript-eslint, eslint-plugin-react, @eslint/compat
+√ Would you like to install them now? · No / Yes
+√ Which package manager do you want to use? · npm
+☕️Installing...
+
+fichero .eslintrc.cjs, tiene
+module.exports = {
+  root: true,
+  env: { 
+    browser: true, 
+    es2021: true 
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+    'standard-with-typescript'
+  ],
+  overrides:[
+  ],
+  parserOptions:{
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project:'./tsconfig.json'
+  },
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    'react-refresh',
+    'react'
+  ],
+  rules: {
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
+  }
+}
+

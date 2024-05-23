@@ -1,3 +1,12 @@
+Como configurar ESLint y Prettier en VSCode
+video
+https://www.youtube.com/watch?v=lSATH2PM5zE
+
+install
+npm i todomvc-app-css -E
+npm i @typescript-eslint/eslint-plugin
+
+
 configurar el linter
 
 ejecutar, hize esto:

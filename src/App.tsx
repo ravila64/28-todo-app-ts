@@ -36,16 +36,26 @@ const App = (): JSX.Element => {
     setTodos(newTodos)
   }
 
-  // Se prodria {}
+  // Se podria {}
   const handleCompleted = (
     { id, completed }: Pick<TodoType, 'id' | 'completed'>
   ): void => {
-
+    const newTodos= todos.map(todo=>{
+      if(todo.id===id){
+        return {
+          ... todo,
+          completed
+        }
+      }
+      return todo
+    })
+    setTodos(newTodos)
   }
 
   return (
     <div className="todoapp">
       <Todos
+        onToogleCompletedTodo={handleCompleted}
         onRemoveTodo={handleRemove}
         todos={todos} />
     </div>

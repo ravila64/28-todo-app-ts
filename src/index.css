@@ -6,3 +6,6 @@
   min-width: 320px;
   min-height: 100vh;
 } */
+html{
+  filter: invert(1);
+}

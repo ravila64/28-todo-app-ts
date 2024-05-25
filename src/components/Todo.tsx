@@ -1,5 +1,5 @@
-import { type Todo as TodoType } from "../types"
-import { type TodoId } from "../types"
+import { type Todo as TodoType } from "../types/Todo"
+import { type TodoId } from "../types/Todo"
 
 //type Props = TodoTYpe
 

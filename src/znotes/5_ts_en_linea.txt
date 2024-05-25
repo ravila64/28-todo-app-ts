@@ -1,0 +1,9 @@
+// link ts en linea
+https://www.typescriptlang.org/play
+
+// en este punto dijo que el ChangeEvent no se utiliza en produccion
+// 51:min adelente
+
+
+Pick = sacar parte del objeto, parametros que necesito
+

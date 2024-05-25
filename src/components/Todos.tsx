@@ -1,4 +1,4 @@
-import { type Todo as TodoType, type TodoId,type ListOfTodos } from "../types"
+import { type Todo as TodoType, type TodoId,type ListOfTodos } from "../types/Todo"
 import { Todo } from "./Todo.tsx"
 
 // cambie id:string x id:TodoId

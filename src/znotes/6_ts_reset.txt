@@ -1,0 +1,5 @@
+// pagina para ver errores de typescript
+https://github.com/total-typescript/ts-reset
+
+// other
+https://www.totaltypescript.com/ts-reset

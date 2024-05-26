@@ -11,11 +11,6 @@ interface Props {
 
 export const Filters: React.FC<Props> = (
   { filterSelected, onFilterChange }) => {
-    // const handleClick = (filter:FilterValue) {
-    //   return(
-
-    //   )
-    // }
 
     return (
     <ul className="filters">

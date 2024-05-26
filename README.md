@@ -1,4 +1,4 @@
-# copia del proyecto de todo-app-ts de midudev
+# proyecto react with typescript todo-app-ts de midudev
 ## Crear un TodoMVC con TypeScript
 
 - [√] Inicializar proyecto con Vite

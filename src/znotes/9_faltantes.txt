@@ -1,0 +1,4 @@
+faltantes, en el codigo que genere con acompañamiento de videos de midudev
+- [ ] Añadir animaciones con AutoAnimate
+- [ ] Pasar a Reducer
+- [ ] Sincronizar con el backend

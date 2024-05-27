@@ -1,0 +1,12 @@
+crypto es de la web ppi
+https://crypto.com/price/es/swappi-dex
+
+example. inspector de chrome
+>window.crypto
+>window.crypto.randomUUID()
+
+
+// cargar un polyfill
+ver node.green
+
+

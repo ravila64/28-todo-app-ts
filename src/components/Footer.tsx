@@ -1,3 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
 import { FilterValue } from "../types/Todo"
 import { Filters } from "./Filters"
 

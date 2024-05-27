@@ -1,29 +1,23 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react"
 import { Todos } from "./components/Todos.tsx"
-import { FilterValue, type TodoId, Todo as TodoType } from "./types/Todo"
+import { FilterValue, type TodoId, TodoTitle, Todo as TodoType } from "./types/Todo"
 import { TODO_FILTERS } from "./constants.ts"
 import { Footer } from "./components/Footer.tsx"
+import { Header } from "./components/Header.tsx"
 
 const mockTodos = [
   {
-    id: '1',
-    title: 'Ver el Twitch de midu',
-    completed: false
+    id: '1', title: 'Ver el Twitch de midu', completed: false
   },
   {
-    id: '2',
-    title: 'Aprender React con TypesScript',
-    completed: false
+    id: '2', title: 'Aprender React con TypesScript', completed: false
   },
   {
-    id: '3',
-    title: 'Sacar tickety de Midufest',
-    completed: false
+    id: '3', title: 'Sacar tickety de Midufest', completed: false
   },
   {
-    id: '4',
-    title: 'Other element for deleted',
-    completed: false
+    id: '4', title: 'Other element for deleted', completed: false
   }
 ]
 
@@ -71,8 +65,20 @@ const App = (): JSX.Element => {
     return todo
   })
 
+  const handleAddTodo = ({title}:TodoTitle):void =>{
+    const newTodo={
+      title,
+      id: crypto.randomUUID(),  // gener aid radom
+      completed:false
+    }
+    // coloca qui los todos actuales + newTodo
+    const newTodos= [...todos, newTodo]
+    setTodos(newTodos)
+  }
+
   return (
     <div className="todoapp">
+      <Header onAddTodo={handleAddTodo}/>
       <Todos
         onToogleCompletedTodo={handleCompleted}
         onRemoveTodo={handleRemove}
